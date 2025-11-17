@@ -1,0 +1,61 @@
+ .h3, .h4, .h5, .h6, .paragraph, .small, .span, .tiny {
+    margin: 0;
+    padding: 0;
+  }
+  
+
+  
+  .h3 {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  
+  .h4 {
+    font-size: 17px;
+    font-weight: 600;
+  }
+  
+  .h5 {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  
+  .h6 {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  
+  .paragraph {
+    font-size: 14px;
+  }
+  
+  .small {
+    font-size: 12px;
+  }
+  
+  .tiny {
+    font-size: 10px;
+  }
+  
+  /* Utility classes for text transformation and ellipsis */
+  .text-transform-none {
+    text-transform: none;
+  }
+  
+  .text-transform-uppercase {
+    text-transform: uppercase;
+  }
+  
+  .text-transform-lowercase {
+    text-transform: lowercase;
+  }
+  
+  .text-transform-capitalize {
+    text-transform: capitalize;
+  }
+  
+  .ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }

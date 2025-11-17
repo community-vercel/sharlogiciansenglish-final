@@ -1,0 +1,365 @@
+.careersPage {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #f9f9f9 0%, #e0e0e0 100%);
+}
+
+/* Hero Section */
+.heroSection {
+  background: url('/images/hero-bg.jpg') no-repeat center center/cover;
+  color: #fff;
+  text-align: center;
+  padding: 120px 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.heroSection::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4); /* Darken the background image */
+  z-index: -1;
+}
+
+.heroTitle {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.heroSubtitle {
+  font-size: 1.6rem;
+  font-weight: 300;
+  margin-bottom: 40px;
+}
+
+.heroButton {
+  padding: 15px 30px;
+  background: linear-gradient(135deg, #0070f3, #005bb5);
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out, transform 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.heroButton:hover {
+  background: linear-gradient(135deg, #005bb5, #0070f3);
+  transform: scale(1.05);
+}
+
+/* About Us Section */
+.aboutSection {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #fff;
+}
+
+.sectionTitle {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+  color: #333;
+  font-weight: 600;
+}
+
+.sectionText {
+  font-size: 1.2rem;
+  color: #555;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 40px;
+  line-height: 1.6;
+}
+
+/* Open Positions Section */
+.positionsSection {
+  padding: 40px 0;
+  background: #f9f9f9;
+}
+
+.jobListings {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.jobCard {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  padding: 25px;
+  width: 280px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #eee;
+}
+
+.jobCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.jobTitle {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  color: #0070f3;
+}
+
+.jobLocation,
+.jobCategory {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.applyButton {
+  padding: 12px 25px;
+  background-color: #0070f3;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.applyButton:hover {
+  background-color: #005bb5;
+  transform: translateY(-3px);
+}
+
+/* How We Hire Section */
+.howWeHireSection {
+  padding: 60px 20px;
+}
+
+.steps {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.step {
+  text-align: center;
+  margin: 20px;
+  transition: transform 0.3s ease;
+}
+
+.step:hover {
+  transform: scale(1.05);
+}
+
+.step h3 {
+  font-size: 1.8rem;
+  color: #333;
+  font-weight: 600;
+}
+
+/* Benefits Section */
+.benefitsSection {
+  padding: 60px 20px;
+  background: #f9f9f9;
+}
+
+.benefitsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.benefit {
+  text-align: center;
+  padding: 25px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.benefit:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.benefit h3 {
+  font-size: 1.7rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.benefit p {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Contact Section */
+.contactSection {
+  padding: 60px 20px;
+}
+
+.contactContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.contactInfo {
+  max-width: 40%;
+}
+
+.contactForm {
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contactForm input,
+.contactForm textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s ease;
+}
+
+.contactForm input:focus,
+.contactForm textarea:focus {
+  border-color: #0070f3;
+}
+
+.contactForm button {
+  padding: 15px 30px;
+  background: linear-gradient(135deg, #0070f3, #005bb5);
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.contactForm button:hover {
+  background: linear-gradient(135deg, #005bb5, #0070f3);
+  transform: translateY(-3px);
+}
+
+.modal {
+  display: flex;
+  position: fixed;
+  z-index: 1000; /* Ensure it stays above other content */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7); /* Darker, more elegant backdrop */
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s ease;
+}
+
+.modalContent {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  width: 450px;
+  max-width: 100%;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+  transform: scale(0.9);
+}
+
+.modal.open .modalContent {
+  transform: scale(1);
+}
+
+.close {
+  color: #333;
+  font-size: 34=8px;
+  font-weight: bold;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.close:hover,
+.close:focus {
+  color: #e63946; /* Red color for hover */
+}
+
+/* Form styles */
+.formGroup {
+  margin-bottom: 20px;
+}
+
+.formGroup label {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #333;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.formGroup input {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #555;
+  transition: border 0.3s ease;
+}
+
+.formGroup input:focus {
+  border-color: #0070f3; /* Blue border on focus */
+  outline: none;
+}
+
+.submitBtn {
+  padding: 14px 30px;
+  background-color: rgb(73, 143, 150);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.submitBtn:hover {
+  background-color:rgb(73, 143, 150);
+  transform: translateY(-4px);
+}
+
+.submitBtn:active {
+  transform: translateY(0); /* Restore position on click */
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+}

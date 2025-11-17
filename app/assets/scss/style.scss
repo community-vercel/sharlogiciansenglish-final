@@ -1,0 +1,143 @@
+/*********************************************************************************
+
+/**************************************************************
+	
+	STYLESHEET INDEXING
+	|
+	|
+	|___ Default Styles
+	|	|
+	|	|___ variables
+	|	|___ mixins
+	|	|___ reset
+	|	|___ typography
+	|	|___ extend
+	|	|___ animations
+	|	|___ shortcode
+	|	|___ spacing
+	|
+	|
+	|___Header Styles
+	|	|___ header
+	|	|___ mainmenu
+	|
+	|
+	|___Inner Styles
+	|	|___ breadcrump 
+	|	|___ section-title 
+	|	|___ button
+	|	|___ pagination
+	|	|___ socialicon
+	|	|___ footer
+	|
+	|___Elements Styles
+	|	|___ portfolio 
+	|	|___ service 
+	|	|___ slider 
+	|	|___ counterup 
+	|	|___ testimonial 
+	|	|___ brand 
+	|	|___ team 
+	|	|___ callto-action 
+	|	|___ tab 
+	|	|___ accordion 
+	|	|___ list 
+	|	|___ contact 
+	|
+	|___BLog Styles
+	|	|___ blog 
+	|	|___ blog-details 
+	|
+	|___Template Styles
+	|	|___ about 
+	|	|___ portfolio-details
+	|	|___ service-details
+	|	|___ preview
+	|
+	|
+	|___ END STYLESHEET INDEXING
+
+***************************************************************/
+
+
+/**************************************
+    Default Styles
+***************************************/
+
+@import '../../assets/scss/default/variables';
+@import '../../assets/scss/default/mixins';
+@import '../../assets/scss/default/reset';
+@import '../../assets/scss/default/typography';
+@import '../../assets/scss/default/extend';
+@import '../../assets/scss/default/animations';
+@import '../../assets/scss/default/shortcode';
+@import '../../assets/scss/default/spacing';
+
+
+
+/**************************************
+    Header Styles
+***************************************/
+
+@import '../../assets/scss/header/header';
+@import '../../assets/scss/header/mainmenu';
+
+
+/**************************************
+    Inner Styles
+***************************************/
+
+@import '../../assets/scss/common/breadcrump';
+@import '../../assets/scss/common/section-title';
+@import '../../assets/scss/common/button';
+@import '../../assets/scss/common/pagination';
+@import '../../assets/scss/common/socialicon';
+@import '../../assets/scss/common/footer';
+@import '../../assets/scss/common/typrography';
+
+
+
+
+/**************************************
+    Elements Styles
+***************************************/
+
+@import '../../assets/scss/elements/portfolio';
+@import '../../assets/scss/elements/service';
+@import '../../assets/scss/elements/portfolio';
+@import '../../assets/scss/elements/service';
+@import '../../assets/scss/elements/slider';
+@import '../../assets/scss/elements/counterup';
+@import '../../assets/scss/elements/testimonial';
+
+@import '../../assets/scss/elements/brand';
+@import '../../assets/scss/elements/team';
+@import '../../assets/scss/elements/callto-action';
+@import '../../assets/scss/elements/tab';
+@import '../../assets/scss/elements/accordion';
+@import '../../assets/scss/elements/list';
+@import '../../assets/scss/elements/contact';
+
+@import '../../assets/scss/elements/column';
+@import '../../assets/scss/elements/404';
+
+
+
+/**************************************
+    Blog Styles
+***************************************/
+
+@import '../../assets/scss/blog/blog';
+@import '../../assets/scss/blog/blog-details';
+
+
+
+/**************************************
+    Template Styles
+***************************************/
+
+@import 'template/about';
+@import 'template/portfolio-details';
+@import 'template/service-details';
+@import 'template/dark-version';
+@import 'template/preview';

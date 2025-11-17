@@ -1,0 +1,28 @@
+/* home.module.css */
+.bg_images {
+    width: 100%;
+    height: 950px;
+    background-size: cover;
+    background-position: center;
+    background-color: #f0f0f0; /* Fallback color */
+    transition: background-image 1s ease-in-out;
+  }
+  
+  .bg_images__26 {
+    background-image: url('/bg-image-26.webp') !important;
+  }
+  
+  @media (max-width: 768px) {
+    .bg_images {
+      aspect-ratio: 4 / 3;
+    }
+  }
+
+
+  
+  
+  @media (max-width: 480px) {
+    .bg_images {
+      aspect-ratio: 1 / 1;
+    }
+  }

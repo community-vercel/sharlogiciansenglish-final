@@ -1,0 +1,210 @@
+.quote-form-container {
+  display: flex;
+  justify-content: center; /* Centers the form horizontally */
+  align-items: center; /* Centers the form vertically */
+  min-height: 100vh; /* Takes full viewport height */
+  padding: 20px; /* Optional, to add space around the form */
+}
+
+/* Form styles */
+.quote-form {
+  width: 100%; /* Make the form take up full width of the container */
+  max-width: 900px; /* Optional: max width for the form */
+  padding: 2rem;
+  background-color: white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  font-size: 1rem;
+  margin: 0 auto; /* Optional: helps center the form horizontally if max-width is set */
+}
+h2 {
+    font-size: 2.25rem;
+    color: #2a2a2a;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-align: center;
+  }
+ 
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  label {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #555;
+    margin-bottom: 0.5rem;
+    display: block;
+  }
+  
+  input,
+  select,
+  textarea {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    border: 1px solid rgb(73,143,150);
+    font-size: 1rem;
+    color: #333;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  input:focus,
+  select:focus,
+  textarea:focus {
+    border-color: rgb(73,143,150);;
+    /* box-shadow: 0 0 10px rgba(0, 102, 204, 0.2);
+    outline: none; */
+  }
+  
+  textarea {
+    resize: vertical;
+    min-height: 150px;
+        border-color: rgb(73,143,150);;
+
+  }
+  
+  button[type='submit'] {
+    background-color: rgb(73,143,150);;
+    color: #fff;
+    padding: 1rem 2rem;
+    font-size: 1.125rem;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    display: block;
+    width: 100%;
+  }
+  
+  button[type='submit']:hover {
+    background-color: rgb(73,143,150);;
+    transform: translateY(-2px);
+  }
+  
+  button[type='submit']:active {
+    background-color: rgb(73,143,150);;
+    transform: translateY(0);
+  }
+  
+  /* Services Required Checkboxes */
+  .checkbox-group {
+    display: grid; /* Enables grid layout */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive columns */
+    gap: 1rem; /* Space between items */
+    margin-top: 0.5rem;
+  }
+  
+  /* Individual checkbox item */
+  .checkbox-item {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Input styling */
+  .checkbox-input {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  /* Label styling */
+  .checkbox-label {
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  /* Optional: No services message */
+  .no-services {
+    font-size: 14px;
+    color: #999;
+  }
+  
+  /* Budget and Start Time Dropdown */
+  select {
+    background-color: #fff;
+    border: 1px solid rgb(73,143,150);
+    /* color: #333; */
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  select:focus {
+    border-color: rgb(73,143,150);;
+    box-shadow: 0 0 10px rgb(73,143,150);
+  }
+  
+  /* Toast Notification */
+  .Toastify__toast-container {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .Toastify__toast {
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .Toastify__toast--success {
+    background-color: #28a745;
+  }
+  
+  .Toastify__toast--error {
+    background-color: #dc3545;
+  }
+  
+  /* Scroll To Top Button */
+  .rn-page-title-area {
+    background-color: rgb(73,143,150);;
+    color: #fff;
+    padding-top: 120px;
+    padding-bottom: 150px;
+    text-align: center;
+  }
+  
+  .rn-page-title-area h2 {
+    font-size: 3rem;
+    color: #fff;
+  }
+  .error-message {
+    color: #e74c3c;  /* Red color for error */
+    font-size: 0.875rem;  /* Smaller font size */
+    margin-top: 0.25rem;  /* Small space above the message */
+    font-weight: 500;  /* Slightly bold */
+  }
+  
+  .error-input {
+    border-color: #e74c3c;  /* Red border for error input */
+    box-shadow: 0 0 5px rgba(231, 76, 60, 0.6);  /* Soft red shadow */
+  }
+  .rn-page-title-area .backto-top {
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .quote-form-container {
+      padding: 1rem;
+    }
+  
+    .grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .submit-btn {
+      width: 100%;
+    }
+  
+    .quote-form {
+      padding: 1.5rem;
+    }
+  }
+  
