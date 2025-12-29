@@ -30,6 +30,7 @@ const nextConfig = {
   // basePath: '/new', 
     images: {
       // domains: [ "community-hazel.vercel.app","sharplogicians.com","sharplogicians.com/new","sharplogicians.comundefined","localhost:3000/new","localhost:3002","127.0.0.1", "127.0.0.1:8000","picsum.photos"],
+      domains: [ "161.35.180.34"],
       remotePatterns: [
         {
           protocol: "https",
@@ -78,6 +79,18 @@ const nextConfig = {
               port: '', // Leave empty for default port
               pathname: '/**', // Allow all paths under this domain
             },
+            {
+  protocol: "http",
+  hostname: "localhost",
+  port: "8000",
+  pathname: "/**",
+},
+{
+  protocol: "http",
+  hostname: "161.35.180.34",
+  port: "8000",
+  pathname: "/**",
+}
       ],
       
     },  
